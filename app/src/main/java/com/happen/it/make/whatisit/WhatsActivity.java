@@ -64,7 +64,7 @@ public class WhatsActivity extends AppCompatActivity {
                     @Override
                     protected String doInBackground(Bitmap... bitmaps) {
                         synchronized (identifyButton) {
-                            String tag = MxNetUtils.identifyImage(bitmaps[0]);
+                            String tag = CaffeUtils.identifyImage(bitmaps[0]);
                             return tag;
                         }
                     }
